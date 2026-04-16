@@ -1,6 +1,6 @@
 {
   "$GMProject":"v1",
-  "%Name":"Blank Pixel Game",
+  "%Name":"PlatformerGM",
   "AudioGroups":[
     {"$GMAudioGroup":"v1","%Name":"audiogroup_default","exportDir":"","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
@@ -27,7 +27,7 @@
   "MetaData":{
     "IDEVersion":"2024.14.4.222",
   },
-  "name":"Blank Pixel Game",
+  "name":"PlatformerGM",
   "resources":[
     {"id":{"name":"font_ru","path":"fonts/font_ru/font_ru.yy",},},
     {"id":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},},
