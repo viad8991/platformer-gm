@@ -7,7 +7,9 @@ move_spd = 2;
 h_spd = 0;
 v_spd = 0;
 
-jump_max_speed = -6.15;
+jump_max_speed = -5;
 fall_max_speed = 4;
 
 shoot_cooldown = 0;
+
+jump_current_count = 0;

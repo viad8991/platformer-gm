@@ -49,12 +49,21 @@ if (place_meeting(x + h_spd, y, obj_ground)) {
 
 x += h_spd;
 
+x = round(x);
+
 // y (vertical) move ----
 
 v_spd += grav;
 
-if (is_space_pressed && place_meeting(x, y + 1, obj_ground)) {
+if (place_meeting(x, y + 1, obj_ground)) {
+	jump_current_count = 0;
+}
+
+// 0 < 1
+// 1 < 1 - false
+if (is_space_pressed && (place_meeting(x, y + 1, obj_ground) or jump_current_count < global.jump_count)) {
 	v_spd = jump_max_speed;
+    jump_current_count += 1
 }
 
 if (v_spd > fall_max_speed) {
@@ -71,7 +80,7 @@ if (place_meeting(x, y + v_spd, obj_ground)) {
 }
 
 y += v_spd;
-
+y = round(y);
 
 // sprite ----- 
 if (h_spd = 0) {
@@ -95,4 +104,8 @@ if (mouse_check_button(mb_left)) {
     } else {
     	shoot_cooldown--;
     }
+}
+
+if (keyboard_check(ord("R"))) {
+	room_restart()
 }
