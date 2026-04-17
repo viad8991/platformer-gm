@@ -1,5 +1,5 @@
 if (hp <= 0) { 
-    if (!place_meeting(x, y - grav, obj_ground)) {
+    if (!place_meeting(x, y, obj_ground)) {
         v_spd += grav	
         move_and_collide(0, v_spd, obj_ground, 5, 0, 0, 0, 2)
     } else {
