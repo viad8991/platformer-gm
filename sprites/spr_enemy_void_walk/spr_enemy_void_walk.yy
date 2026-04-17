@@ -3,7 +3,7 @@
   "%Name":"spr_enemy_void_walk",
   "bboxMode":2,
   "bbox_bottom":15,
-  "bbox_left":1,
+  "bbox_left":4,
   "bbox_right":14,
   "bbox_top":1,
   "collisionKind":1,

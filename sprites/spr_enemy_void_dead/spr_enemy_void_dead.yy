@@ -1,11 +1,11 @@
 {
   "$GMSprite":"v2",
   "%Name":"spr_enemy_void_dead",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":15,
   "bbox_left":1,
   "bbox_right":14,
-  "bbox_top":12,
+  "bbox_top":15,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,

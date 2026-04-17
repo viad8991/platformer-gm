@@ -1,4 +1,16 @@
 if (hp <= 0) {
+    if (sprite_index != spr_enemy_void_dead and scale > 0.75) { 
+        with (instance_create_layer(x - 3, y, "Instances", obj_enemy_void)) { 
+            face = other.face
+            scale = other.scale - 0.25
+        }
+        
+        with (instance_create_layer(x + 3, y, "Instances", obj_enemy_void)) { 
+            face = other.face
+            scale = other.scale - 0.25
+        }
+    }
+    
     sprite_index = spr_enemy_void_dead
 	return;
 }
@@ -9,25 +21,25 @@ var _sub_pixel = 0.5;
 
 // horizonatal
 
-var _distance_to_player = distance_to_object(obj_player);
+var _is_see_player = !collision_line(x, y - (sprite_height), obj_player.x, obj_player.y - obj_player.sprite_height, obj_ground, false, true)
+var _distance_to_player = abs(obj_player.x - x + _rand_value_1)
 var _direction_to_player = sign(obj_player.x - x);
 
-if (_distance_to_player < 10) {
-    // in range attack:
+if (_is_see_player and _distance_to_player < (16 * scale)) {
+	// in range attack:
     //  stay and attack
     
+    h_spd = 0;
     rotate_to_player(_direction_to_player);
     
-    h_spd = 0;
     if (attack_delay <= 0) {
         attack_delay = game_get_speed(gamespeed_fps) * 2
-        
         sprite_index = spr_enemy_void_attack
     } else {
         attack_delay -= 1;
     }
-} else if (_distance_to_player < 100) {
-    // in range view:
+} else if (_is_see_player and _distance_to_player < 100) {
+	// in range view:
     //  just walk
     
     rotate_to_player(_direction_to_player);
@@ -43,10 +55,8 @@ if (_distance_to_player < 10) {
         h_spd = 0; 
         sprite_index = spr_enemy_void_idle
     }
-} else {
-    // out of range attack:
-    //   stay and idle
-    h_spd = 0;
+} else { 
+    h_spd = 0; 
     sprite_index = spr_enemy_void_idle
 }
 

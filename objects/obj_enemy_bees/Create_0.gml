@@ -1,3 +1,5 @@
+grav = 0.2
+
 h_spd = 0;
 v_spd = 0;
 
@@ -5,11 +7,14 @@ max_hp = 5;
 hp = max_hp;
 
 move_dir = 0;
-move_spd = 4;
+move_spd = 2;
 
 attack_delay = 0;
 
 face = 1;
+
+_rand_value_1 = choose(1, 2, 3);
+_rand_value_2 = choose(1, 2, 3);
 
 function rotate_to_player(_direction_to_player) {
    if (_direction_to_player != 0) { 

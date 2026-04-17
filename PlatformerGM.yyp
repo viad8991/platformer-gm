@@ -25,6 +25,7 @@
   ],
   "ForcedPrefabProjectReferences":[
     {"link":"io.gamemaker.gm_filter_underwater-1.0.0","name":"io.gamemaker.gm_filter_underwater-1.0.0","path":"io.gamemaker.gm_filter_underwater-1.0.0.yyp",},
+    {"link":"io.gamemaker.sdfshaders-1.0.0","name":"io.gamemaker.sdfshaders-1.0.0","path":"io.gamemaker.sdfshaders-1.0.0.yyp",},
   ],
   "IncludedFiles":[],
   "isEcma":false,
@@ -34,7 +35,8 @@
   },
   "name":"PlatformerGM",
   "resources":[
-    {"id":{"name":"font_ru","path":"fonts/font_ru/font_ru.yy",},},
+    {"id":{"name":"font_ru_32","path":"fonts/font_ru_32/font_ru_32.yy",},},
+    {"id":{"name":"font_ru_8","path":"fonts/font_ru_8/font_ru_8.yy",},},
     {"id":{"name":"obj_ammunition","path":"objects/obj_ammunition/obj_ammunition.yy",},},
     {"id":{"name":"obj_boot","path":"objects/obj_boot/obj_boot.yy",},},
     {"id":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},},
