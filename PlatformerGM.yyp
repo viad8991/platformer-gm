@@ -37,7 +37,7 @@
   },
   "name":"PlatformerGM",
   "resources":[
-    {"id":{"name":"font_ru_32","path":"fonts/font_ru_32/font_ru_32.yy",},},
+    {"id":{"name":"font_ru_28","path":"fonts/font_ru_28/font_ru_28.yy",},},
     {"id":{"name":"font_ru_8","path":"fonts/font_ru_8/font_ru_8.yy",},},
     {"id":{"name":"obj_ammunition","path":"objects/obj_ammunition/obj_ammunition.yy",},},
     {"id":{"name":"obj_boot","path":"objects/obj_boot/obj_boot.yy",},},
@@ -71,6 +71,7 @@
     {"id":{"name":"spr_medkit","path":"sprites/spr_medkit/spr_medkit.yy",},},
     {"id":{"name":"spr_nightfall","path":"sprites/spr_nightfall/spr_nightfall.yy",},},
     {"id":{"name":"spr_player_idle","path":"sprites/spr_player_idle/spr_player_idle.yy",},},
+    {"id":{"name":"spr_player_jump","path":"sprites/spr_player_jump/spr_player_jump.yy",},},
     {"id":{"name":"spr_player_run","path":"sprites/spr_player_run/spr_player_run.yy",},},
     {"id":{"name":"Sprite12","path":"sprites/Sprite12/Sprite12.yy",},},
   ],

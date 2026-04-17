@@ -59,8 +59,6 @@ if (place_meeting(x, y + 1, obj_ground)) {
 	jump_current_count = 0;
 }
 
-// 0 < 1
-// 1 < 1 - false
 if (is_space_pressed && (place_meeting(x, y + 1, obj_ground) or jump_current_count < global.jump_count)) {
 	v_spd = jump_max_speed;
     jump_current_count += 1
@@ -83,14 +81,15 @@ y += v_spd;
 y = round(y);
 
 // sprite ----- 
-if (h_spd = 0) {
-	sprite_index = spr_player_idle
+if ((h_spd < 0 or h_spd > 0) and v_spd > -1) {
+	sprite_index = spr_player_run
+} else if (v_spd < -1) {
+	sprite_index = spr_player_jump
 } else {
-    sprite_index = spr_player_run
+	sprite_index = spr_player_idle
 }
 
 // ----- стрельба
-
 if (mouse_check_button(mb_left)) {
     if (shoot_cooldown <= 0) {
         with (instance_create_layer(x, y - 9, "Instances", obj_bullet)) { 
