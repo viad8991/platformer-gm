@@ -92,7 +92,7 @@ if ((h_spd < 0 or h_spd > 0) and v_spd > -1) {
 // ----- стрельба
 if (mouse_check_button(mb_left)) {
     if (shoot_cooldown <= 0) {
-        with (instance_create_layer(x, y - 9, "Instances", obj_bullet)) { 
+        with (instance_create_layer(x, y - 9, "InstancesUpper", obj_bullet)) { 
             image_xscale = other.image_xscale * other.face; 
             
             if (!other.face) {
