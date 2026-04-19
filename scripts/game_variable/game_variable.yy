@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"const",
+  "%Name":"game_variable",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"const",
+  "name":"game_variable",
   "parent":{
     "name":"scripts",
     "path":"folders/scripts.yy",

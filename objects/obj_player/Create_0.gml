@@ -13,3 +13,5 @@ fall_max_speed = 4;
 shoot_cooldown = 0;
 
 jump_current_count = 0;
+
+area = "area"

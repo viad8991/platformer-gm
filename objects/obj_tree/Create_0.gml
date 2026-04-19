@@ -1,0 +1,1 @@
+is_before = (layer_get_name(layer) == global.InstancesUpper);

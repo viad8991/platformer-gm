@@ -68,8 +68,8 @@ if (_is_see_player and _distance_to_player < (16 * scale)) {
     }
 } else { 
     h_spd = 0; 
+    //image_index = 0
     sprite_index = spr_enemy_void_idle
-    image_index = 0
 }
 
 x += h_spd

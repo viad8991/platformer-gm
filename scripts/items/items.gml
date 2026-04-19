@@ -8,6 +8,7 @@ function Item(_obj, _rare) constructor {
     rare = _rare
 }
 
+/// @return {Item} item
 function get_random_items() {
     // randomize();
     // return irandom(_items);

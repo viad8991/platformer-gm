@@ -92,7 +92,7 @@ if ((h_spd < 0 or h_spd > 0) and v_spd > -1) {
 // ----- стрельба
 if (mouse_check_button(mb_left)) {
     if (shoot_cooldown <= 0) {
-        with (instance_create_layer(x, y - 9, "InstancesUpper", obj_bullet)) { 
+        with (instance_create_layer(x, y - 9, global.InstancesUpper, obj_bullet)) { 
             image_xscale = other.image_xscale * other.face; 
             
             if (!other.face) {
@@ -108,3 +108,15 @@ if (mouse_check_button(mb_left)) {
 if (keyboard_check(ord("R"))) {
 	room_restart()
 }
+
+if (keyboard_check_pressed(vk_f1)) {
+	window_set_fullscreen(!window_get_fullscreen());
+}
+
+if (keyboard_check_pressed(vk_f2)) {
+    var lay_id = layer_get_id("Areas");
+    var is_visible = layer_get_visible(lay_id);
+    layer_set_visible(lay_id, !is_visible);	
+}
+
+area = get_area()

@@ -1,16 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_camera",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_area_desert",
+  "eventList":[],
   "managed":true,
-  "name":"obj_camera",
+  "name":"obj_area_desert",
   "overriddenProperties":[],
   "parent":{
-    "name":"objects",
-    "path":"folders/objects.yy",
+    "name":"area",
+    "path":"folders/objects/area.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_area_desert",
+    "path":"sprites/spr_area_desert/spr_area_desert.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

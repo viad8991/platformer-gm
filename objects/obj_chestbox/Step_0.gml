@@ -9,5 +9,5 @@ if (
 	is_open = true
     image_index = item.rare
     
-    instance_create_layer(x, y - 4, "InstancesUpper", item.obj)
+    instance_create_layer(x, y - 4, global.InstancesUpper, item.obj)
 }

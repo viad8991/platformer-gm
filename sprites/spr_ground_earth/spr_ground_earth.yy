@@ -44,8 +44,8 @@
   },
   "origin":0,
   "parent":{
-    "name":"sprites",
-    "path":"folders/sprites.yy",
+    "name":"ground",
+    "path":"folders/sprites/ground.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

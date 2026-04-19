@@ -1,6 +1,6 @@
 {
   "$GMSprite":"v2",
-  "%Name":"spr_ground_moon",
+  "%Name":"spr_ground_earth_winter",
   "bboxMode":0,
   "bbox_bottom":15,
   "bbox_left":0,
@@ -12,29 +12,29 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"95d5611b-d10e-4097-b456-9b2c717d7795","name":"95d5611b-d10e-4097-b456-9b2c717d7795","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"976293ab-0d2f-4ffd-b0a0-07ae19fef53d","name":"976293ab-0d2f-4ffd-b0a0-07ae19fef53d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
-  "gridX":0,
-  "gridY":0,
+  "gridX":4,
+  "gridY":4,
   "height":16,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"dbc18c49-0ecf-484a-a1df-fdec3119b291","blendMode":0,"displayName":"default","isLocked":false,"name":"dbc18c49-0ecf-484a-a1df-fdec3119b291","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"34ac0b04-4919-4977-b0ce-e4d7f7a9c6f4","blendMode":0,"displayName":"default","isLocked":false,"name":"34ac0b04-4919-4977-b0ce-e4d7f7a9c6f4","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"spr_ground_moon",
+  "name":"spr_ground_earth_winter",
   "nineSlice":{
     "$GMNineSliceData":"",
     "bottom":0,
     "enabled":true,
     "guideColour":[4294902015,4294902015,4294902015,4294902015,],
     "highlightColour":1728023040,
-    "highlightStyle":1,
+    "highlightStyle":0,
     "left":0,
     "resourceType":"GMNineSliceData",
     "resourceVersion":"2.0",
     "right":0,
     "tileMode":[
-      1,
+      0,
       0,
       0,
       0,
@@ -52,7 +52,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"spr_ground_moon",
+    "%Name":"spr_ground_earth_winter",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -76,7 +76,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"spr_ground_moon",
+    "name":"spr_ground_earth_winter",
     "playback":1,
     "playbackSpeed":30.0,
     "playbackSpeedType":0,
@@ -88,8 +88,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"95d5611b-d10e-4097-b456-9b2c717d7795","path":"sprites/spr_ground_moon/spr_ground_moon.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"cfcfeee0-29bc-46d0-abcb-d78793551c14","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"976293ab-0d2f-4ffd-b0a0-07ae19fef53d","path":"sprites/spr_ground_earth_winter/spr_ground_earth_winter.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"238c3e55-18a4-4009-8dfd-197375a05016","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
