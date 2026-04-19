@@ -1,5 +1,3 @@
-grav = 0.2;
-
 scale = 1.25
 
 h_spd = 0;
@@ -7,8 +5,6 @@ v_spd = 0;
 
 max_hp = 10;
 hp = max_hp * scale;
-
-fall_max_speed = 2;
 
 move_dir = 0;
 move_spd = 0.6 * scale;

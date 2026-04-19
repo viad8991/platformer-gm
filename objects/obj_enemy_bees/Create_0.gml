@@ -1,5 +1,3 @@
-grav = 0.2
-
 h_spd = 0;
 v_spd = 0;
 

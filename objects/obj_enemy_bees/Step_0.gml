@@ -1,11 +1,10 @@
 if (hp <= 0) { 
     if (!place_meeting(x, y, obj_ground)) {
-        v_spd += grav	
-        move_and_collide(0, v_spd, obj_ground, 5, 0, 0, 0, 2)
-    } else {
-        v_spd = 0
+        v_spd += global.grav	
+        move_and_collide(0, v_spd, obj_ground, 4, 0, 0, 0, global.max_fall_speed)
     }
     
+    speed = 0
     sprite_index = spr_enemy_bees_dead
     
 	return;

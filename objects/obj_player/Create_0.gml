@@ -1,17 +1,13 @@
-grav = 0.2;
-
-face = 1;
-
-move_dir = 0;
-move_spd = 2;
 h_spd = 0;
 v_spd = 0;
 
-jump_max_speed = -5;
-fall_max_speed = 4;
+move_spd = 2;
+
+face = 1;
 
 shoot_cooldown = 0;
 
+jump_max_speed = -5
 jump_current_count = 0;
 
-area = "area"
+area = Area.NONE

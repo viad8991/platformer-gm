@@ -9,6 +9,12 @@ _y += 30
 draw_text(0, _y, "dmg: " + string(global.damage));
 
 _y += 30
+draw_text(0, _y, $"v_speed: {round(v_spd)}, h_speed: {round(h_spd)}");
+
+_y += 30
+draw_text(0, _y, $"x: {x}, y: {y} | {get_area_name(area)}");
+
+_y += 30
 draw_text(0, _y, $"jmp cont: {string(global.jump_count)} ({jump_current_count})");
 
 _y += 30
@@ -16,6 +22,3 @@ draw_text(0, _y, "Q - open all chest, R - restart")
 
 _y += 30
 draw_text(0, _y, "F1 - full screen, F2 - visible areas");
-
-_y += 30
-draw_text(0, _y, $"x: {x}, y: {y} | {get_name(area)}");

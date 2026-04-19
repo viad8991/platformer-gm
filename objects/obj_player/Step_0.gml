@@ -1,59 +1,32 @@
-is_up = keyboard_check(ord("W"));
-is_down = keyboard_check(ord("S"));
-is_left = keyboard_check(ord("A"));
-is_right = keyboard_check(ord("D"));
+var is_up = keyboard_check(ord("W"));
+var is_down = keyboard_check(ord("S"));
+var is_left = keyboard_check(ord("A"));
+var is_right = keyboard_check(ord("D"));
 
-is_space_pressed = keyboard_check_pressed(vk_space);
+var is_space_pressed = keyboard_check_pressed(vk_space);
 
-/* ver 2
-move_dir = is_right - is_left 
+var move_dir = is_right - is_left;
 
-if (move_dir != 0) {
-	face = move_dir;
-}
-
-if (!place_meeting(x, y + move_spd, obj_ground)) {
-	v_spd += grav;
-} else {
-    v_spd = 0;
-    if (is_space_pressed) {
-    	v_spd = jump_max_speed
-    }
-}
-
-move_and_collide(move_dir * move_spd, v_spd, obj_ground, 5, 0, 0, move_spd, fall_max_speed);
-
-x = round(x);
-y = round(y);
-*/ 
-
-var _sub_pixel = 0.5;
-
-// x (horizontal) move -----
-
-move_dir = is_right - is_left;
+var sub_pixel = 0.5;
 
 if (move_dir != 0) {
 	face = move_dir;
 }
 
+// horizontal
 h_spd = move_dir * move_spd;
-if (place_meeting(x + h_spd, y, obj_ground)) { 
-    var _pixel_check = _sub_pixel * sign(h_spd);
-    while (!place_meeting(x + _pixel_check, y, obj_ground)) {
-    	x += _pixel_check;
+if (place_meeting(x + h_spd, y, obj_ground)) {
+    var pixel_check = sub_pixel * sign(h_spd)
+    while (!place_meeting(x + pixel_check, y, obj_ground)) {
+    	x += pixel_check
     }
-    
-	h_spd = 0;
+    h_spd = 0;
 }
 
-x += h_spd;
+x += round(h_spd)
 
-x = round(x);
-
-// y (vertical) move ----
-
-v_spd += grav;
+// vertival
+v_spd += global.grav
 
 if (place_meeting(x, y + 1, obj_ground)) {
 	jump_current_count = 0;
@@ -64,21 +37,19 @@ if (is_space_pressed && (place_meeting(x, y + 1, obj_ground) or jump_current_cou
     jump_current_count += 1
 }
 
-if (v_spd > fall_max_speed) {
-	v_spd = fall_max_speed;
-}
-  
-if (place_meeting(x, y + v_spd, obj_ground)) {
-	var _pixel_check = _sub_pixel * sign(v_spd);
-    while (!place_meeting(x, y + _pixel_check, obj_ground)) {
-    	y += _pixel_check;
-    }
-    
-	v_spd = 0;
+if (v_spd > global.max_fall_speed) {
+	v_spd = global.max_fall_speed
 }
 
-y += v_spd;
-y = round(y);
+if (place_meeting(x, y + v_spd, obj_ground)) {
+	var pixel_check = sub_pixel * sign(v_spd);
+    while (!place_meeting(x, y + pixel_check, obj_ground)) {
+    	y += pixel_check;
+    }
+	v_spd = 0
+}
+
+y += round(v_spd)
 
 // sprite ----- 
 if ((h_spd < 0 or h_spd > 0) and v_spd > -1) {

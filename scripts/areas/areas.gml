@@ -19,7 +19,7 @@ function get_area() {
     }
 }
 
-function get_name(area) {
+function get_area_name(area) {
     switch (area) {
     	case Area.WINTER:
             return "Winter" 

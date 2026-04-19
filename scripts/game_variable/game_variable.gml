@@ -1,6 +1,9 @@
 // консты
 global.InstancesUpper = "InstancesUpper"
 
+global.grav = 0.2;
+global.max_fall_speed = 4;
+
 // постоянные
 global.base_damage = 1;
 
