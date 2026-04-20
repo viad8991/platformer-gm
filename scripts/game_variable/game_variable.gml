@@ -1,5 +1,6 @@
 // консты
-global.InstancesUpper = "InstancesUpper"
+global.Instances = "Instances"           // main_layer
+global.InstancesUpper = "InstancesUpper" // upper_layer
 
 global.grav = 0.2;
 global.max_fall_speed = 4;

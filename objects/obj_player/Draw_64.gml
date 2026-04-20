@@ -22,3 +22,12 @@ draw_text(0, _y, "Q - open all chest, R - restart")
 
 _y += 30
 draw_text(0, _y, "F1 - full screen, F2 - visible areas");
+
+_y += 30
+var bees_alive = 0;
+var bees_dead = 0;
+for (var i = 0; i < instance_number(obj_enemy_bees); i++) { if(instance_find(obj_enemy_bees, i).hp > 0) { bees_alive++ } else { bees_dead++ } }
+var void_alive = 0;
+var void_dead = 0;
+for (var i = 0; i < instance_number(obj_enemy_void); i++) { if(instance_find(obj_enemy_void, i).hp > 0) { void_alive++ } else { void_dead++ } }
+draw_text(0, _y, $"(al+de) voids: {void_alive}+{void_dead}, bees's: {bees_alive}+{bees_dead}");

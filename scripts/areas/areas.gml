@@ -19,6 +19,19 @@ function get_area() {
     }
 }
 
+// @return {Area} area
+function get_area_in(_x, _y) {
+    if (position_meeting(_x, _y, obj_area_winter)) {
+        return Area.WINTER
+    } else if (position_meeting(_x, _y, obj_area_forest)) {
+        return Area.FOREST
+    } else if (position_meeting(_x, _y, obj_area_desert)) {
+        return Area.DESERT
+    } else {
+    	return Area.NONE
+    }
+}
+
 function get_area_name(area) {
     switch (area) {
     	case Area.WINTER:

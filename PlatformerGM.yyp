@@ -53,6 +53,7 @@
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
     {"id":{"name":"obj_chestbox","path":"objects/obj_chestbox/obj_chestbox.yy",},},
     {"id":{"name":"obj_enemy_bees","path":"objects/obj_enemy_bees/obj_enemy_bees.yy",},},
+    {"id":{"name":"obj_enemy_controller","path":"objects/obj_enemy_controller/obj_enemy_controller.yy",},},
     {"id":{"name":"obj_enemy_void","path":"objects/obj_enemy_void/obj_enemy_void.yy",},},
     {"id":{"name":"obj_ground","path":"objects/obj_ground/obj_ground.yy",},},
     {"id":{"name":"obj_helicopter","path":"objects/obj_helicopter/obj_helicopter.yy",},},
