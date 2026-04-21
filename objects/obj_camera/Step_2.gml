@@ -17,4 +17,4 @@ final_camera_y = lerp(current_camera_y, expected_camera_y, camera_speed)
 final_camera_x = clamp(final_camera_x, 0, room_width - camera_width)
 final_camera_y = clamp(final_camera_y, 0, room_height - camera_height)
 
-camera_set_view_pos(view_camera[0], final_camera_x, final_camera_y)
+camera_set_view_pos(view_camera[0], round(final_camera_x), round(final_camera_y))

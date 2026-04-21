@@ -35,7 +35,7 @@ function spanw(_x, _y, _enemy) {
     
     var _alive_count = all_count - array_length(dead_instants)
     if (_alive_count < _enemy.alive) {
-        while (place_meeting(_x, _y, obj_ground)) { _y-- } 
+        while (place_meeting(_x, _y, global.ground_tiles)) { _y-- } 
         
         instance_create_layer(_x, _y, global.Instances, _enemy.obj);
         // show_debug_message($"x: {_x}, y: {_y} ({get_area_name(get_area_in(_x, _y))}): {_enemy.obj}")    	

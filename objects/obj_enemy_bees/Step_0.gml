@@ -1,7 +1,8 @@
 if (hp <= 0) { 
-    if (!place_meeting(x, y, obj_ground)) {
+    if (!place_meeting(x, y + 1, global.ground_tiles)) {
         v_spd += global.grav	
-        move_and_collide(0, v_spd, obj_ground, 4, 0, 0, 0, global.max_fall_speed)
+        move_and_collide(0, v_spd, global.ground_tiles, 8, 0, 0, 0, global.max_fall_speed)
+        y = round(y)
     }
     
     speed = 0
@@ -39,8 +40,4 @@ if (_is_see_player and place_meeting(x, y, obj_player)) { // если _is_see_pl
     } else {
         attack_delay -= 1;
     }	
-}
-
-if (x < 0 or y < 0 or x > room_width or y > room_height) {
-    instance_destroy()
 }
