@@ -1,23 +1,10 @@
-if (hp <= 0) {
-    if (sprite_index != spr_enemy_void_dead and scale > 0.75) { 
-        with (instance_create_layer(x - 3, y - 3, global.Instances, obj_enemy_void)) { 
-            face = other.face
-            scale = other.scale - 0.25
-        }
-        
-        with (instance_create_layer(x + 3, y - 3, global.Instances, obj_enemy_void)) { 
-            face = other.face
-            scale = other.scale - 0.25
-        }
-    }
-    
+if (!is_alive) { 
     if (!place_meeting(x, y, global.ground_tiles)) {
         v_spd += global.grav	
         move_and_collide(0, v_spd, global.ground_tiles, 4, 0, 0, 0, global.max_fall_speed)
         y = round(y)
     }
     
-    sprite_index = spr_enemy_void_dead
 	return;
 }
 
@@ -69,4 +56,26 @@ if (_is_see_player and _distance_to_player < (16 * scale) and attack_delay <= 0)
     sprite_index = spr_enemy_void_walk
 } else if (sprite_index != spr_enemy_void_attack) {
     sprite_index = spr_enemy_void_idle
+}
+
+if (is_alive and hp <= 0) {
+	is_alive = false
+    
+    sprite_index = spr_enemy_void_dead
+    
+    if (scale > 0.75) {
+       with (instance_create_layer(x - 3, y - 3, global.Instances, obj_enemy_void)) { 
+           face = other.face
+           scale = other.scale - 0.25
+       }
+           
+       with (instance_create_layer(x + 3, y - 3, global.Instances, obj_enemy_void)) { 
+           face = other.face
+           scale = other.scale - 0.25
+       }
+    }
+    
+    if (choose(true, false, false, false, false, false, false)) {
+        instance_create_layer(x, y - sprite_height / 2, global.InstancesUpper, obj_key)
+    } 
 }

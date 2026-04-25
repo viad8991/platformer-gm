@@ -1,3 +1,7 @@
+for (var i = 0; i < global.keys; i++) {
+    draw_sprite_ext(spr_key, 1, 20 + (i * 15),  display_get_gui_height() - 10 * 4, image_xscale * 4, image_yscale * 4, image_angle, image_blend, 0.9)	
+}
+
 draw_set_font(font_ru_28);
 draw_set_color(c_red);
 draw_set_halign(fa_left);

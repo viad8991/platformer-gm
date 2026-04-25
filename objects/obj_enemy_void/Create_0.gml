@@ -6,6 +6,8 @@ v_spd = 0;
 max_hp = 10;
 hp = max_hp * scale;
 
+is_alive = true;
+
 move_dir = 0;
 move_spd = 0.6 * scale;
 
