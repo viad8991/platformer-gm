@@ -13,7 +13,7 @@ if (hp <= 0) {
 
 var _obj_player_y = obj_player.y - obj_player.sprite_height / 2;
 
-var _is_see_player = !collision_line(x, y, obj_player.x, _obj_player_y, obj_ground, false, true)
+var _is_see_player = !collision_line(x, y, obj_player.x, _obj_player_y, global.ground_tiles, false, true)
 var _distance_to_player = point_distance(x, y, obj_player.x, _obj_player_y);
 
 if (_is_see_player and _distance_to_player > 4 and _distance_to_player < 100) {

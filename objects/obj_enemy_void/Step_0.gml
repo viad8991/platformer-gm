@@ -63,19 +63,19 @@ if (is_alive and hp <= 0) {
     
     sprite_index = spr_enemy_void_dead
     
-    if (scale > 0.75) {
-       with (instance_create_layer(x - 3, y, global.Instances, obj_enemy_void)) { 
-           face = other.face
-           scale = other.scale - 0.25
-       }
+    if (scale > 0.75) { 
+        with (instance_create_layer(x - 3, y, global.InstancesUpper, obj_enemy_void)) { 
+            face = other.face 
+            scale = other.scale - 0.25 
+        }
            
-       with (instance_create_layer(x + 3, y, global.Instances, obj_enemy_void)) { 
-           face = other.face
-           scale = other.scale - 0.25
-       }
+        with (instance_create_layer(x + 3, y, global.InstancesUpper, obj_enemy_void)) { 
+            face = other.face 
+            scale = other.scale - 0.25 
+        } 
     }
     
-    if (choose(true, false, false, false, false, false, false)) {
+    if (choose(true, false, false, false, false, false, false)) { 
         instance_create_layer(x, y - sprite_height / 2, global.InstancesUpper, obj_key)
     } 
 }

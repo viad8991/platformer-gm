@@ -119,7 +119,6 @@
     {"id":{"name":"spr_player_jump","path":"sprites/spr_player_jump/spr_player_jump.yy",},},
     {"id":{"name":"spr_player_run","path":"sprites/spr_player_run/spr_player_run.yy",},},
     {"id":{"name":"spr_rocket","path":"sprites/spr_rocket/spr_rocket.yy",},},
-    {"id":{"name":"spr_trash","path":"sprites/spr_trash/spr_trash.yy",},},
     {"id":{"name":"spr_tree_desert","path":"sprites/spr_tree_desert/spr_tree_desert.yy",},},
     {"id":{"name":"spr_tree_winter","path":"sprites/spr_tree_winter/spr_tree_winter.yy",},},
     {"id":{"name":"spr_tree","path":"sprites/spr_tree/spr_tree.yy",},},

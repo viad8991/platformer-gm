@@ -1,3 +1,5 @@
+// TODO у этого говна абсолютно сломана атака, я ХЗ как исправить.
+
 scale = 1.25
 
 h_spd = 0;
@@ -11,7 +13,7 @@ is_alive = true;
 move_dir = 0;
 move_spd = 0.6 * scale;
 
-damage = 10 * scale
+damage = round(10 * scale)
 attack_delay = 0
 
 face = 1;
@@ -19,7 +21,7 @@ face = 1;
 _rand_value_1 = choose(1, 2, 3, 4);
 
 function rotate_to_player(_direction_to_player) {
-   if (_direction_to_player != 0) { 
-       face = _direction_to_player;
-   }
+    if (_direction_to_player != 0) { 
+        face = _direction_to_player; 
+    }
 }
