@@ -64,12 +64,12 @@ if (is_alive and hp <= 0) {
     sprite_index = spr_enemy_void_dead
     
     if (scale > 0.75) {
-       with (instance_create_layer(x - 3, y - 3, global.Instances, obj_enemy_void)) { 
+       with (instance_create_layer(x - 3, y, global.Instances, obj_enemy_void)) { 
            face = other.face
            scale = other.scale - 0.25
        }
            
-       with (instance_create_layer(x + 3, y - 3, global.Instances, obj_enemy_void)) { 
+       with (instance_create_layer(x + 3, y, global.Instances, obj_enemy_void)) { 
            face = other.face
            scale = other.scale - 0.25
        }
